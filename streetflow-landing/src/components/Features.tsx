@@ -5,7 +5,7 @@ import { useRef } from 'react';
 import { MapPin, Users, CreditCard, BarChart3, Brain, Smartphone, QrCode, TrendingUp } from 'lucide-react';
 
 const Features: React.FC = () => {
-  const ref = useRef(null);
+  const ref = useRef<HTMLElement>(null);
   const isInView = useInView(ref, { once: true, margin: "-100px" });
 
   const containerVariants = {
