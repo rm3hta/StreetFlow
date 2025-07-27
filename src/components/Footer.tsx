@@ -17,7 +17,7 @@ import {
 } from 'lucide-react';
 
 const Footer: React.FC = () => {
-  const ref = useRef(null);
+  const ref = useRef<HTMLElement>(null);
   const isInView = useInView(ref, { once: true, margin: "-100px" });
 
   const socialLinks = [

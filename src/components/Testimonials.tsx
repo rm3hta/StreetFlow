@@ -5,7 +5,7 @@ import { useRef } from 'react';
 import { Star, Quote, Music, Heart } from 'lucide-react';
 
 const Testimonials: React.FC = () => {
-  const ref = useRef(null);
+  const ref = useRef<HTMLElement>(null);
   const isInView = useInView(ref, { once: true, margin: "-100px" });
 
   const testimonials = [

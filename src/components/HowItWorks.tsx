@@ -5,7 +5,7 @@ import { useRef } from 'react';
 import { UserPlus, Map, Music, DollarSign, ArrowRight } from 'lucide-react';
 
 const HowItWorks: React.FC = () => {
-  const ref = useRef(null);
+  const ref = useRef<HTMLElement>(null);
   const isInView = useInView(ref, { once: true, margin: "-100px" });
 
   const steps = [
